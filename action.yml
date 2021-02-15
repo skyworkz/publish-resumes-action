@@ -1,0 +1,5 @@
+name: 'Publish resumes'
+description: 'Publishes resumes to Google Drive'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
