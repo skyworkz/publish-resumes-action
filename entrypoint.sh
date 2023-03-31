@@ -8,7 +8,7 @@ do
     config=$(basename "$resume")
     
     echo "Validating resume $config"
-    hackmyresume validate "$GITHUB_WORKSPACE/resumes${config}/resume.json" --assert
+    hackmyresume validate "$GITHUB_WORKSPACE/resumes/${config}/resume.json" --assert
     
     echo "Building resume $config"
     hackmyresume build "$GITHUB_WORKSPACE/resumes/${config}/resume.json" to "$GITHUB_WORKSPACE/out/${config}_Skyworkz.doc" "$GITHUB_WORKSPACE/out/${config}_Skyworkz.pdf" --theme skyworkz
